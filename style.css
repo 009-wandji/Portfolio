@@ -1,0 +1,584 @@
+*{
+  box-sizing: border-box;
+}
+
+:root{
+    --color1:#D89584;
+    --color2:#f4f4f4;
+}
+/* Style du bouton */
+.github-link {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 50px; /* Bords arrondis pour un look moderne */
+    background-color: rgb(98, 0, 255); /* Couleur de fond (vous pouvez la changer) */
+    color: #fff; /* Couleur du texte */
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none; /* Supprime le soulignement par défaut */
+    transition: background-color 0.3s ease; /* Transition douce au survol */
+    border: 2px solid black; /* Bords pour l'effet de survol */
+}
+
+/* Style de l'icône GitHub */
+.github-link i {
+    margin-right: 8px; /* Espacement entre l'icône et le texte */
+}
+
+/* Effet de survol */
+.github-link:hover {
+    background-color: transparent;
+    color: black;
+    border: 2px solid blue; /* Changement de couleur au survol */
+}
+
+
+
+
+        body{
+            margin: 0;
+            font-family: Arial;
+            line-height: 1.5;
+        }
+        iframe{
+          width: 100%;
+          border: none;
+          height: 350px;
+        }
+
+        div.cover{
+            background: url(cover_overlay.png) no-repeat center/100% 100%,url(cover.jpg) no-repeat center/cover;
+            height: 360px;
+            position: relative;
+        }
+        img.cover-profile{
+            height: 100px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+        }
+
+        
+        
+        div.cover{
+            text-align: center;
+        }
+        /*background-color: #ff000080; */
+        div.cover-contact{
+            
+            position: absolute;
+            top: 20px;
+            left: 10px;
+            border-left: 4px solid var(--color1);
+            padding-left: 8px;
+        }
+        div.cover-contact * {
+            color: white;
+            font-size: 14px; 
+        }
+        a.contact-button {
+            color: var(--color1);
+            border: 3px solid var(--color1);
+            padding: 8px 20px;
+            text-decoration: none;
+            background-color: #00000040;
+            display:inline-block;
+            margin-top: 18px;
+            font-size: 14px;
+        }
+        a.contact-button-portfolio{
+          position: absolute; 
+          right: 20px; 
+          top: 5px;
+        }
+         a.contact-button:hover{
+            color:white;
+            border: 3px solid white;
+
+         }
+         .section{
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            overflow: auto;
+
+         }
+
+
+         h1{
+            color:white;
+            text-align: center;
+            font-size: 42px;
+            margin-top: 10px;
+            margin-bottom: 0px;
+         }
+         div.cover p {
+            color: lightgray;
+            text-align: center;
+            margin-top: 8px;
+            font-size: 14px;
+         }
+         div.cover-contact p {
+            text-align: left;
+            margin-top: 0px;
+            margin-bottom: 0px;
+
+
+         }
+          div.cover-contact p:first-child{
+            margin-bottom: 14px;
+          }
+
+          div.section-grise1{
+            background: url(triangle2white.svg) no-repeat center bottom -1px/100%;
+            background-color: var(--color2);
+            padding-bottom: 70px;
+          }
+          div.section-grise2{
+            background: url(triangle1white.svg) no-repeat center top/100%;
+            background-color: var(--color2);
+            padding-top: 80px;
+          }
+
+
+          h2{
+            text-align: center;
+            font-size: 34px;
+            margin-top: 0px;
+          }
+
+
+          div.separateur{
+            background-color:blue ;
+            height: 1px;
+            width: 150px;
+            position: relative;
+            left: 50%;
+            margin-left: -75px;
+            
+
+          }
+          div.section-grise1 p{
+            font-size: 22px;
+            color:#656565;
+            text-align: center;
+            max-width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          img.col-contenu{
+            width: 40%;
+          }
+
+         div.col-contenu{
+            width: 60%;
+            padding-left: 16px;
+          }
+          .float-right{
+            float: right;
+          }
+         
+          
+          div.texte-avec-ligne-verticale{   
+            border-left: 4px solid var(--color1);
+            padding-left: 8px;
+            height: 50px;
+            display: inline-block;
+          }
+          div.texte-avec-ligne-verticale p{
+             margin-top: 0;
+          }
+          div.barre-verticale{
+            height: 50px;
+            width: 4px;
+            background-color: var(--color1);
+            margin-right: 8px;
+          }
+          .col-portfolio{
+            width: 47%;
+          }
+          div.frame{
+            margin: 30px 50px;
+            padding: 20px 30px;
+            background-color: white;
+            box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
+          }
+          p.frame-title{
+            font-size: 30px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+
+          }
+          div.frame img{
+            width: 100px;
+          }
+          /* PORTFOLIO */
+          .portfolio-header{
+            height: 90PX;
+             background: url(cover.jpg) no-repeat center/cover;
+             position: relative;
+          }
+          .portfolio-header-title{
+            font-size: 26px;
+            font-weight: bold;
+            color: white;
+            padding-top: 4px;
+            padding-left: 8px;
+          }
+          h1.portfolio{
+            font-size: 46px;
+            color: black;
+            line-height: 1;
+            margin-top: 10px;
+            padding-top: 10px;
+          }
+           h2.portfolio{
+            font-size: 46px;
+            color: black;
+            font-weight: normal;
+            margin-bottom: 0;
+          }
+          a.portfolio-back{
+            color: var(--color1);
+            margin-left: -10px;
+          }
+          img.portfolio{
+            width:70%;
+            max-width: 550px;
+          }
+          .col-Kompetenzen{
+            width: 47%;
+          }
+         
+a.youtube-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background-color: #e63946; /* Rouge doux */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  border: 2px solid #e63946;
+  border-radius: 20px; /* Bordures arrondies */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a.youtube-link i {
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+/* Effet au survol */
+a.youtube-link:hover {
+  background-color: white;
+  color: black; /* Texte devient noir */
+}
+
+a.youtube-link:hover i {
+  color: black; /* Icône aussi en noir */
+}
+
+
+
+
+.conclusion-section {
+  text-align: center;
+}
+
+
+         .noten-section {
+  background-color: #f0f4f8;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  margin: 30px 0;
+}
+.pyrokraft-text {
+  color: blue;
+  font-weight: bold;
+}
+.snake-text{
+  color: green;
+  font-weight: bold;
+}
+.bac-section {
+  background-color: #f0f4ff;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 40px 0;
+}
+
+.bac-section h2 {
+  color: #1e3a8a;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bac-section p {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.bac-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.bac-links a {
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Bouton Diplôme - vert doux */
+.bac-diplome {
+  background-color: #66bb6a;
+}
+.bac-diplome:hover {
+  background-color: #43a047;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(67, 160, 71, 0.4);
+}
+
+/* Bouton Relevé - bleu doux */
+.bac-releve {
+  background-color: #64b5f6;
+}
+.bac-releve:hover {
+  background-color: #42a5f5;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(66, 165, 245, 0.4);
+}
+.cv-lm-section {
+  background-color: #f0fdf4;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 40px 0;
+}
+
+.cv-lm-section h2 {
+  color: #2e7d32;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cv-lm-section p {
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.cv-lm-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cv-lm-links a:nth-child(1) {
+  background-color: #ce93d8; /* Violet doux pour le CV */
+  color: white;
+}
+
+.cv-lm-links a:nth-child(1):hover {
+  background-color: #ba68c8;
+}
+
+.cv-lm-links a:nth-child(2) {
+  background-color: #ffcc80; /* Orange pastel pour la lettre */
+  color: white;
+}
+
+.cv-lm-links a:nth-child(2):hover {
+  background-color: #ffb74d;
+}
+.lang-diploma-section {
+  background-color: #e3f2fd;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 40px 0;
+}
+
+.lang-diploma-section h2 {
+  color: #1565c0;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.lang-diploma-section p {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.diploma-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.diploma-links a {
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  pointer-events: none; /* Rend le lien inactif */
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.diploma-links a.b1 {
+  background-color: #4db6ac; /* Vert doux */
+}
+
+.diploma-links a.b2 {
+  background-color: #64b5f6; /* Bleu pastel */
+}
+
+.btn-download {
+  display: inline-block;
+  padding: 12px 18px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+a.pdf-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background-color: #c5e86c; /* Vert citron doux */
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  border: 2px solid #c5e86c;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a.pdf-link i {
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+/* Effet au survol */
+a.pdf-link:hover {
+  background-color: white;
+  color: black;
+}
+
+a.pdf-link:hover i {
+  color: black;
+}
+
+
+
+
+
+        
+
+          /*RESPONSIVE DESIGN: MOBILE*/
+  @media only screen and (max-width:768px){
+      div.cover-contact{
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            border-left: 4px solid var(--color1);
+            padding-left: 8px;
+        }
+        div.cover-contact * {
+            color: white;
+            font-size: 13px; }
+     img.cover-profile{
+            height: 100px;
+            display: block;
+            margin-left: auto;
+            margin-right: 105px;
+            margin-top: 0px;
+        }
+ h1{
+    font-size: 38px;
+    margin-top: 6px;
+    margin-bottom: 0px;
+ }
+ div.cover p {
+    margin-top: 2px;
+    font-size: 13px;
+  }
+  .section{
+            padding-left: 20px;
+            padding-right: 20px;
+            
+
+         }
+ div.section-grise1{
+            padding-bottom: 40px;
+          }
+   h2{
+            font-size: 30px;
+          }   
+        img.col-contenu{
+            width: 100%;
+          }
+
+         div.col-contenu{
+            width: 100%;
+            padding-left: 0px;
+            margin-top: 20px;
+          }
+          .col-portfolio{
+            width: 100%;
+            margin-bottom: 20px;
+          }
+          div.frame {
+            margin: 0px 0px;
+            padding: 0px 0px;
+            box-shadow: none;
+          }
+          div.frame img{
+            width: 70px;
+          }
+           iframe{
+          height: 450px;
+        }
+        /*PORTFOLIO-MOBILE*/
+        .portfolio-header-title{
+          font-size: 20px;
+          padding-top: 8px;
+          padding-left: 8px;
+        }
+       
+        h1.portfolio{
+          font-size: 40px;
+        }
+        h2.portfolio{
+          font-size: 22px;
+        }
+        img.portfolio{
+          width: 100%;
+
+        }
+  }
+
+
+
